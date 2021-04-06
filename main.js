@@ -7,3 +7,17 @@ function calCulator (n) {
 
 const name = calCulator('name')
 name() 
+
+
+
+function newSission(name) {
+    return function(age) {
+        return name + age
+    };
+};
+
+const addOne = newSission('ilsyha ');
+const addTwo = newSission('Olena ');
+
+console.log(addOne(20));
+console.log(addTwo(30));
